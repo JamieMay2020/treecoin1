@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreeCoin - Our Charity Partners</title>
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+    <link rel="stylesheet" href="charities.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+        <div class="logo">
+            <div class="logo-icon">
+                <img src="treecoin.png" alt="TreeCoin Logo">
+            </div>
+            TreeCoin
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#next-donation">Next Donation</a></li>
+        </ul>
+            <div class="social-icons">
+            <a href="https://x.com/treecoinorg" class="social-icon" target="_blank">
+                <img src="x.png" alt="X.com">
+            </a>
+            <a href="https://dexscreener.com/" class="social-icon" target="_blank">
+                <img src="dex.png" alt="Dex Screener">
+            </a>
+            <a href="https://www.instagram.com/treecoinorg/" class="social-icon" target="_blank">
+                <img src="Instagram_icon.png" alt="Dex Screener">
+            </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Our Charity Partners</h1>
+                    <p class="hero-description">
+                        Transparent partnerships with verified environmental organizations worldwide. 
+                        Every TreeCoin transaction directly funds real tree-planting initiatives.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="total-donated">$0</span>
+                            <span class="stat-label">Total Donated</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="trees-funded">0</span>
+                            <span class="stat-label">Trees Funded</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="active-partners">0</span>
+                            <span class="stat-label">Active Partners</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next Donation Section -->
+        <section class="section" id="next-donation">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Next Donation Recipient</h2>
+                    <p class="section-subtitle">
+                        The charity that will receive the next donation from TreeCoin transactions
+                    </p>
+                </div>
+                
+                <div class="next-donation-card" id="next-donation-card">
+                    <div class="next-badge">NEXT RECIPIENT</div>
+                    <div class="charity-info">
+                        <h3>Next recipient is managed by TreeCoin team</h3>
+                        <p>The donation rotation is automatically managed to ensure fair distribution among all charity partners.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Charity Partners Section -->
+        <section class="section" id="partners">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Verified Partners</h2>
+                    <p class="section-subtitle">
+                        Certified organizations making real environmental impact worldwide
+                    </p>
+                </div>
+                
+                <div class="charities-grid" id="charities-grid">
+                    <!-- Charity cards will be dynamically added here -->
+                </div>
+                
+                <!-- Charity Detail Modal -->
+                <div class="charity-modal" id="charity-modal">
+                    <div class="modal-overlay" onclick="charityManager.closeModal()"></div>
+                    <div class="modal-content">
+                        <button class="modal-close" onclick="charityManager.closeModal()">×</button>
+                        <div class="modal-charity-content" id="modal-charity-content">
+                            <!-- Charity details will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-text">© 2025 TreeCoin. Growing a greener future together.</div>
+            <div class="footer-disclaimer">All charity partnerships are verified and transparent.</div>
+        </div>
+    </footer>
+
+    <script src="charities.js"></script>
+</body>
+</html>
