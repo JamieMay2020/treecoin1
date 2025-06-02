@@ -63,6 +63,13 @@ nav {
     transition: all 0.3s ease;
     opacity: 0.8;
 }
+.donation-disclaimer {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    margin-top: 24px;
+    font-style: italic;
+}
 
 .social-icon:hover {
     opacity: 1;
