@@ -149,6 +149,20 @@ nav {
     margin-bottom: 24px;
     line-height: 1.1;
 }
+.hero-tagline {
+    font-size: 24px;
+    color: #4ecdc4;
+    font-weight: 500;
+    margin-bottom: 24px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .hero-tagline {
+        font-size: 18px;
+    }
+}
 
 .hero-subtitle {
     font-size: 24px;
